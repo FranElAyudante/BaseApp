@@ -58,6 +58,9 @@ baseapp/
 1. Instalar dependencias
 composer install
 npm install
+npm install bootstrap@5.3.3 @popperjs/core
+npm install bootstrap@5.3.3 sass
+
 ```
 ```bash 
 2. Configurar entorno

@@ -1,0 +1,19 @@
+* {
+    transition: 0.3s;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.max-width {
+    max-width: 1250px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

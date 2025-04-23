@@ -1,0 +1,49 @@
+// Tamaños de Media Queries
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;
+$desktopXXL: 1400px;
+
+// Colores base
+$white:         #ffffff;
+$black:         #000000;
+
+// Grises
+$gray-100:      #f8f9fa;
+$gray-200:      #e9ecef;
+$gray-300:      #dee2e6;
+$gray-400:      #ced4da;
+$gray-500:      #adb5bd;
+$gray-600:      #6c757d;
+$gray-700:      #495057;
+$gray-800:      #343a40;
+$gray-900:      #212529;
+
+// Colores principales
+$primary:       #0d6efd;
+$secondary:     #6c757d;
+$success:       #198754;
+$info:          #0dcaf0;
+$warning:       #ffc107;
+$danger:        #dc3545;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+// Gradientes y fondos
+$gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #161616 100%);
+$background-main: #0f0f0f;
+
+// Textos
+$text-light:    #f1f1f1;
+$text-dark:     #1e1e1e;
+$text-muted:    $gray-600;
+
+// Acciones / UI
+$button-hover: rgba(255, 255, 255, 0.1);
+$dropdown-bg:  #ffffff;
+$dropdown-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+// Links
+$link-color:        $primary;
+$link-hover-color:  darken($primary, 10%);
