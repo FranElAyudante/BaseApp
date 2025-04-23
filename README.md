@@ -90,4 +90,22 @@ Push al branch (git push origin feature/awesome-feature)
 
 Abre un Pull Request
 
-<div align="center"> <p> usando el stack más moderno de PHP/JavaScript</p> <img src="https://laravel.com/img/logomark.min.svg" width="50" alt="Laravel"> <img src="https://vuejs.org/images/logo.png" width="50" alt="Vue"> <img src="https://inertiajs.com/img/logo.svg" width="50" alt="Inertia"> </div> ```
+## 🚀 Comandos si solo quieres iniciar el proyecto y trabajr en el
+
+```bash 
+1. Instalar dependencias
+composer install
+npm install
+```
+```bash 
+2. Ejecutar migraciones
+php artisan migrate
+```
+```bash 
+3. Iniciar servidores
+php artisan serve
+npm run dev
+```
+
+
+<div align="center"> <p> usando el stack más moderno de PHP/JavaScript</p> <img src="https://laravel.com/img/logomark.min.svg" width="50" alt="Laravel"> <img src="https://vuejs.org/images/logo.png" width="50" alt="Vue"></div> ```
