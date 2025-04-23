@@ -26,7 +26,20 @@ Antes de empezar, asegúrate de tener instalados:
 
 ## Estructura del Proyecto
 
-BaseApp/ ├── app/ # Lógica backend de Laravel ├── bootstrap/ ├── config/ ├── database/ ├── public/ # Archivos públicos (JS, CSS, imágenes) ├── resources/ │ ├── js/ # Código Vue │ │ └── Pages/ # Vistas conectadas con Inertia │ └── views/ # Blade files (opcional, poco usados con Inertia) ├── routes/ │ └── web.php ├── tests/ └── vite.config.js
+BaseApp/ 
+├── app/ # Lógica backend de Laravel 
+├── bootstrap/ 
+├── config/ 
+├── database/ 
+├── public/ # Archivos públicos (JS, CSS, imágenes) 
+├── resources/ 
+│ ├── js/ # Código Vue 
+│ │ └── Pages/ # Vistas conectadas con Inertia 
+│ └── views/ # Blade files (opcional, poco usados con Inertia) 
+├── routes/          
+│ └── web.php 
+├── tests/           
+└── vite.config.js
 
 
 ---
