@@ -48,31 +48,34 @@ baseapp/
 │   │   ├── Components/ # Componentes reutilizables
 │   │   ├── Layouts/    # Layouts principales
 │   │   ├── Pages/      # Vistas (Inertia)
-│   │   └── Stores/     # Estado global (Pinia)
+│   │   └── Stores/     # Estado global 
 │   └── scss/         # Estilos globales
 ├── routes/           # Definición de rutas
 └── vite.config.js    # Configuración de Vite
 
 ## 🚀 Instalación Rápida
-```bash 
+
 1. Instalar dependencias
+```bash 
 composer install
 npm install
 npm install bootstrap@5.3.3 @popperjs/core
 npm install bootstrap@5.3.3 sass
-
 ```
-```bash 
+
 2. Configurar entorno
+```bash 
 cp .env.example .env
 php artisan key:generate
 ```
-```bash 
+
 3. Ejecutar migraciones
+```bash 
 php artisan migrate
 ```
-```bash 
+
 4. Iniciar servidores
+```bash 
 php artisan serve
 npm run dev
 ```
