@@ -54,22 +54,25 @@ baseapp/
 └── vite.config.js    # Configuración de Vite
 
 ## 🚀 Instalación Rápida
-
+```bash 
 1. Instalar dependencias
 composer install
 npm install
-
+```
+```bash 
 2. Configurar entorno
 cp .env.example .env
 php artisan key:generate
-
+```
+```bash 
 3. Ejecutar migraciones
 php artisan migrate
-
+```
+```bash 
 4. Iniciar servidores
 php artisan serve
 npm run dev
-
+```
 ##  Comandos Útiles
 Comando	Descripción
 npm run dev	Inicia Vite en modo desarrollo
