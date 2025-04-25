@@ -1,0 +1,174 @@
+// Variables
+$primary-color: #198754;
+$secondary-color: #6c757d;
+$error-color: #dc3545;
+$text-color: #333;
+$light-text: #444;
+$border-color: #ced4da;
+$background-color: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$focus-color: #198754;
+$hover-color: #157347;
+$light-background: #e9ecef;
+
+// Estilos generales
+.edit-post-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: $background-color;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px $shadow-color;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edit-post-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: $text-color;
+    margin-bottom: 1.5rem;
+}
+
+.edit-post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+// Campos del formulario
+.edit-post-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.edit-post-label {
+    font-weight: 500;
+    color: $light-text;
+}
+
+.edit-post-input-text,
+.edit-post-input-file {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: $background-color;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+        border-color: $focus-color;
+        box-shadow: 0 0 0 0.2rem rgba($focus-color, 0.25);
+        outline: none;
+    }
+}
+
+.edit-post-input-file {
+    padding: 0.5rem;
+}
+
+// Editor Quill
+.edit-post-quill-editor {
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid $border-color;
+    
+    .ql-toolbar {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .ql-container {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: calc(100% - 42px);
+    }
+}
+
+// Vista previa de imagen
+.edit-post-preview-container {
+    margin-top: 1rem;
+}
+
+.edit-post-preview-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $light-text;
+    margin-bottom: 0.5rem;
+}
+
+.edit-post-preview-image {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 8px $shadow-color;
+    object-fit: cover;
+}
+
+// Mensajes de error
+.edit-post-error {
+    display: block;
+    color: $error-color;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+// Botones
+.edit-post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.edit-post-submit-button,
+.edit-post-back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit-post-submit-button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+}
+
+.edit-post-back-button {
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+
+    &:hover {
+        background-color: $light-background;
+        color: $text-color;
+    }
+}
+
+// Íconos
+.edit-post-back-icon,
+.edit-post-submit-icon {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+// Clases para validación
+.is-invalid {
+    border-color: $error-color !important;
+}

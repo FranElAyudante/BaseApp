@@ -1,0 +1,375 @@
+// Variables
+$primary-color: #95312b;
+$secondary-color: #3878B5;
+$text-color: #333;
+$light-text: #555;
+$border-color: #e8e8e8;
+$background-color: #ffffff;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$social-icon-bg: #ccc;
+$social-icon-hover: #444;
+$overlay-color: rgba(149, 49, 43, 0.7);
+$search-border: #ccc;
+$button-hover-bg: #ffffff;
+$button-hover-text: #3878B5;
+
+// Estilos generales
+.blog-detail-container {
+    padding: 50px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+// Navegación
+.blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.blog-nav-text {
+    background-color: transparent;
+    color: $secondary-color;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: none;
+    font-weight: 500;
+    display: flex;
+    align-items: start;
+
+    i {
+        font-size: 18px;
+    }
+
+    &:hover {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+}
+
+.blog-nav-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+.blog-nav-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: start;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.blog-nav-back {
+    background-color: $secondary-color;
+    color: white;
+    border: 1px solid $secondary-color;
+    
+    &:hover {
+        background-color: $button-hover-bg;
+        color: $button-hover-text;
+    }
+}
+
+.blog-nav-prev,
+.blog-nav-next {
+    background-color: transparent;
+    color: $text-color;
+    border: 1px solid $border-color;
+    
+    &:hover {
+        background-color: $border-color;
+    }
+}
+
+// Contenido principal
+.blog-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.blog-main-content {
+    flex: 0 0 calc(70% - 15px);
+    max-width: calc(70% - 15px);
+    
+    @media (max-width: 992px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.blog-sidebar {
+    flex: 0 0 calc(30% - 15px);
+    max-width: calc(30% - 15px);
+    
+    @media (max-width: 992px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.blog-image-container {
+    margin-bottom: 30px;
+}
+
+.blog-main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $primary-color;
+    line-height: 1.2;
+}
+
+.blog-featured-image {
+    width: 100%;
+    max-height: 755px;
+    border-radius: 5px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px $shadow-color;
+    margin-bottom: 20px;
+}
+
+.blog-meta-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $border-color;
+}
+
+.blog-publish-date {
+    font-size: 0.9rem;
+    color: $light-text;
+}
+
+.blog-social-share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blog-share-label {
+    font-size: 0.9rem;
+    color: $light-text;
+}
+
+.blog-social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $social-icon-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: $social-icon-hover;
+    }
+}
+
+.blog-fb-icon {
+    background-color: #3b5998;
+}
+
+.blog-ig-icon {
+    background-color: #e4405f;
+}
+
+.blog-yt-icon {
+    background-color: #cd201f;
+}
+
+// Sidebar
+.blog-search-box {
+    margin-bottom: 30px;
+}
+
+.blog-search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid $search-border;
+    font-size: 1rem;
+}
+
+.blog-sidebar-title {
+    color: $primary-color;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-color;
+}
+
+// Estilos para los grids de artículos
+.blog-search-grid,
+.blog-recent-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-search-item,
+.blog-recent-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.blog-search-image-container,
+.blog-recent-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.blog-search-image,
+.blog-recent-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.blog-search-overlay,
+.blog-recent-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    transition: opacity 0.3s ease;
+}
+
+.blog-search-overlay {
+    background: $overlay-color;
+    opacity: 0;
+    
+    .blog-search-item:hover & {
+        opacity: 1;
+    }
+}
+
+.blog-recent-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    
+    .blog-recent-item:hover & {
+        opacity: 1;
+    }
+}
+
+.blog-search-title,
+.blog-recent-post-title {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.blog-recent-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+    .blog-recent-item:hover & {
+        opacity: 1;
+    }
+}
+
+// Estilos para el contenido del blog
+.blog-content-text {
+    text-align: justify;
+    line-height: 1.6;
+    
+    ::v-deep {
+        h1, h2, h3, h4, h5 {
+            color: $primary-color !important;
+            margin: 20px 0 15px;
+        }
+        
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.blog-empty-content {
+    ::v-deep p {
+        margin-bottom: 0;
+    }
+}
+
+// Responsive
+@media (max-width: 768px) {
+    .blog-navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .blog-nav-item {
+        width: 100%;
+    }
+    
+    .blog-main-title {
+        font-size: 1.5rem;
+    }
+    
+    .blog-meta-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .blog-content-text {
+        ::v-deep {
+            font-size: 15px;
+        }
+    }
+}

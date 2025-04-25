@@ -1,97 +1,97 @@
 <template>
-    <footer class="bg-dark text-white pt-5 pb-4">
-        <div class="container">
-            <div class="row g-4">
+    <footer class="custom-footer">
+        <div class="custom-footer__container">
+            <div class="custom-footer__row">
                 <!-- Company Info -->
-                <div class="col-lg-4 col-md-6 text-white">
-                    <div class="mb-4">
-                        <Link to="/" class="d-flex align-items-center text-decoration-none">
-                        <img src="" alt="Logo" height="40" class="me-2">
-                        <span class="fs-4 fw-bold text-white">MiApp</span>
+                <div class="custom-footer__company">
+                    <div class="custom-footer__logo-container">
+                        <Link href="/" class="custom-footer__logo-link">
+                        <img src="" alt="Logo" height="40" class="custom-footer__logo-image">
+                        <span class="custom-footer__logo-text">MiApp</span>
                         </Link>
                     </div>
-                    <p class="text-hite">Transformando ideas en soluciones digitales innovadoras desde 2023.</p>
-                    <div class="social-icons d-flex gap-3 mt-4">
-                        <a href="#" class="text-white"><i class="bi bi-facebook fs-5"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-twitter fs-5"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-linkedin fs-5"></i></a>
-                        <a href="#" class="text-white"><i class="bi bi-instagram fs-5"></i></a>
+                    <p class="custom-footer__description">Transformando ideas en soluciones digitales innovadoras desde 2023.</p>
+                    <div class="custom-footer__social-icons">
+                        <Link href="#" class="custom-footer__social-link"><i class="bi bi-facebook"></i></Link>
+                        <Link href="#" class="custom-footer__social-link"><i class="bi bi-twitter"></i></Link>
+                        <Link href="#" class="custom-footer__social-link"><i class="bi bi-linkedin"></i></Link>
+                        <Link href="#" class="custom-footer__social-link"><i class="bi bi-instagram"></i></Link>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="mb-4 fw-bold">Enlaces Rápidos</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><router-link to="/"
-                                class="text-muted text-decoration-none hover-effect">Inicio</router-link></li>
-                        <li class="mb-2"><router-link to="/about"
-                                class="text-muted text-decoration-none hover-effect">Nosotros</router-link></li>
-                        <li class="mb-2"><router-link to="/services"
-                                class="text-muted text-decoration-none hover-effect">Servicios</router-link></li>
-                        <li class="mb-2"><router-link to="/pricing"
-                                class="text-muted text-decoration-none hover-effect">Precios</router-link></li>
-                        <li class="mb-2"><router-link to="/contact"
-                                class="text-muted text-decoration-none hover-effect">Contacto</router-link></li>
+                <div class="custom-footer__links">
+                    <h5 class="custom-footer__title">Enlaces Rápidos</h5>
+                    <ul class="custom-footer__list">
+                        <li class="custom-footer__list-item"><Link href="/"
+                                class="custom-footer__link">Inicio</Link></li>
+                        <li class="custom-footer__list-item"><Link href="/about"
+                                class="custom-footer__link">Nosotros</Link></li>
+                        <li class="custom-footer__list-item"><Link href="/services"
+                                class="custom-footer__link">Servicios</Link></li>
+                        <li class="custom-footer__list-item"><Link href="/pricing"
+                                class="custom-footer__link">Precios</Link></li>
+                        <li class="custom-footer__list-item"><Link href="/contact"
+                                class="custom-footer__link">Contacto</Link></li>
                     </ul>
                 </div>
 
                 <!-- Services -->
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="mb-4 fw-bold">Servicios</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-effect">Desarrollo
-                                Web</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-effect">App
-                                Móviles</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-effect">Diseño
-                                UI/UX</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-effect">Marketing
-                                Digital</a></li>
-                        <li class="mb-2"><a href="#"
-                                class="text-muted text-decoration-none hover-effect">Consultoría</a></li>
+                <div class="custom-footer__services">
+                    <h5 class="custom-footer__title">Servicios</h5>
+                    <ul class="custom-footer__list">
+                        <li class="custom-footer__list-item"><Link href="#" class="custom-footer__link">Desarrollo
+                                Web</Link></li>
+                        <li class="custom-footer__list-item"><Link href="#" class="custom-footer__link">App
+                                Móviles</Link></li>
+                        <li class="custom-footer__list-item"><Link href="#" class="custom-footer__link">Diseño
+                                UI/UX</Link></li>
+                        <li class="custom-footer__list-item"><Link href="#" class="custom-footer__link">Marketing
+                                Digital</Link></li>
+                        <li class="custom-footer__list-item"><Link href="#"
+                                class="custom-footer__link">Consultoría</Link></li>
                     </ul>
                 </div>
 
                 <!-- Contact Info -->
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="mb-4 fw-bold">Contacto</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li class="mb-3 d-flex">
-                            <i class="bi bi-geo-alt-fill me-3 mt-1"></i>
+                <div class="custom-footer__contact">
+                    <h5 class="custom-footer__title">Contacto</h5>
+                    <ul class="custom-footer__contact-list">
+                        <li class="custom-footer__contact-item">
+                            <i class="bi bi-geo-alt-fill custom-footer__contact-icon"></i>
                             <span>Av. Principal 123, Ciudad, País</span>
                         </li>
-                        <li class="mb-3 d-flex">
-                            <i class="bi bi-telephone-fill me-3 mt-1"></i>
+                        <li class="custom-footer__contact-item">
+                            <i class="bi bi-telephone-fill custom-footer__contact-icon"></i>
                             <span>+1 234 567 890</span>
                         </li>
-                        <li class="mb-3 d-flex">
-                            <i class="bi bi-envelope-fill me-3 mt-1"></i>
+                        <li class="custom-footer__contact-item">
+                            <i class="bi bi-envelope-fill custom-footer__contact-icon"></i>
                             <span>info@miapp.com</span>
                         </li>
-                        <li class="mb-3 d-flex">
-                            <i class="bi bi-clock-fill me-3 mt-1"></i>
+                        <li class="custom-footer__contact-item">
+                            <i class="bi bi-clock-fill custom-footer__contact-icon"></i>
                             <span>Lun-Vie: 9:00 - 18:00</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <hr class="my-4 bg-secondary">
+            <hr class="custom-footer__divider">
 
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0 text-muted">&copy; 2023 MiApp. Todos los derechos reservados.</p>
+            <div class="custom-footer__bottom-row">
+                <div class="custom-footer__copyright">
+                    <p class="custom-footer__copyright-text">&copy; 2023 MiApp. Todos los derechos reservados.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Términos</a>
+                <div class="custom-footer__legal-links">
+                    <ul class="custom-footer__legal-list">
+                        <li class="custom-footer__legal-item"><Link href="#" class="custom-footer__legal-link">Términos</Link>
                         </li>
-                        <li class="list-inline-item"><span class="text-muted">•</span></li>
-                        <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Privacidad</a>
+                        <li class="custom-footer__legal-separator"><span>•</span></li>
+                        <li class="custom-footer__legal-item"><Link href="#" class="custom-footer__legal-link">Privacidad</Link>
                         </li>
-                        <li class="list-inline-item"><span class="text-muted">•</span></li>
-                        <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Cookies</a>
+                        <li class="custom-footer__legal-separator"><span>•</span></li>
+                        <li class="custom-footer__legal-item"><Link href="#" class="custom-footer__legal-link">Cookies</Link>
                         </li>
                     </ul>
                 </div>
@@ -102,40 +102,4 @@
 
 <script setup>
 import { Link } from '@inertiajs/vue3';
-// No se necesitan scripts complejos para el footer básico
-// Para versión avanzada podrías añadir un store para los datos dinámicos
 </script>
-
-<style scoped>
-footer {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white !important;
-}
-
-.hover-effect {
-    transition: all 0.3s ease;
-    color: white !important;
-}
-
-.hover-effect:hover {
-    color: white !important;
-    padding-left: 5px;
-}
-
-.social-icons a {
-    transition: all 0.3s ease;
-    opacity: 0.7;
-    color: white !important;
-}
-
-.social-icons a:hover {
-    opacity: 1;
-    transform: translateY(-3px);
-    color: white !important;
-}
-
-.list-unstyled li {
-    transition: all 0.3s ease;
-    color: white !important;
-}
-</style>

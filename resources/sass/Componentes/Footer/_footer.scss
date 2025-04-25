@@ -1,0 +1,251 @@
+.custom-footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  
+    &__container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1140px;
+    }
+  
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      margin-bottom: -16px;
+    }
+  
+    &__company,
+    &__links,
+    &__services,
+    &__contact {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 16px;
+    }
+  
+    &__company {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  
+    &__links,
+    &__services {
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+  
+    &__contact {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
+  
+    &__logo-container {
+      margin-bottom: 1rem;
+    }
+  
+    &__logo-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+    }
+  
+    &__logo-image {
+      margin-right: 0.5rem;
+    }
+  
+    &__logo-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  
+    &__description {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1rem;
+    }
+  
+    &__social-icons {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+  
+    &__social-link {
+      color: white;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      font-size: 1.25rem;
+  
+      &:hover {
+        opacity: 1;
+        transform: translateY(-3px);
+        color: white;
+      }
+    }
+  
+    &__title {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    &__list-item {
+      margin-bottom: 0.5rem;
+      transition: all 0.3s ease;
+    }
+  
+    &__link {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+  
+      &:hover {
+        color: white;
+        padding-left: 5px;
+      }
+    }
+  
+    &__contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  
+    &__contact-item {
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: flex-start;
+    }
+  
+    &__contact-icon {
+      margin-right: 0.75rem;
+      margin-top: 0.125rem;
+      flex-shrink: 0;
+    }
+  
+    &__divider {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  
+    &__bottom-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  
+    &__copyright {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+      
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  
+    &__legal-links {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: center;
+      
+      @media (min-width: 768px) {
+        text-align: right;
+      }
+    }
+  
+    &__copyright-text {
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0;
+    }
+  
+    &__legal-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      
+      @media (min-width: 768px) {
+        justify-content: flex-end;
+      }
+    }
+  
+    &__legal-item,
+    &__legal-separator {
+      display: inline-block;
+    }
+  
+    &__legal-link {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: white;
+      }
+    }
+  
+    &__legal-separator {
+      margin: 0 0.5rem;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 991.98px) {
+    .custom-footer {
+      &__company,
+      &__links,
+      &__services,
+      &__contact {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .custom-footer {
+      &__company,
+      &__links,
+      &__services,
+      &__contact {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+  
+      &__copyright,
+      &__legal-links {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center !important;
+      }
+  
+      &__legal-list {
+        justify-content: center !important;
+      }
+    }
+  }

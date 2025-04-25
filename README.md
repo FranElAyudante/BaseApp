@@ -1,4 +1,4 @@
-# 🚀 BaseApp | Laravel 11 + Vue 3 + Inertia.js
+# 🚀 BaseApp | Laravel 11 + Vue 3 + Inertia.js + BLOG
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)
@@ -96,7 +96,7 @@ Push al branch (git push origin feature/awesome-feature)
 
 Abre un Pull Request
 
-## 🚀 Comandos si solo quieres iniciar el proyecto y trabajr en el
+## 🚀 Comandos si solo quieres iniciar el proyecto y trabajar en el
 
 ```bash 
 1. Instalar dependencias

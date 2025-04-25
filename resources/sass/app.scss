@@ -1,3 +1,12 @@
 //globales
 @use 'globales/globales';
 
+
+
+// Componentes
+@use 'componentes/Header/header';
+@use 'componentes/Footer/footer';
+@use 'componentes/Blog/create-blog';
+@use 'componentes/Blog/edit-blog';
+@use 'componentes/Blog/blog-actualidad';
+@use 'componentes/Blog/principal-blog';

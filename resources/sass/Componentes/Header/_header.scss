@@ -1,0 +1,113 @@
+// Variables
+$nav-bg-start: #1a1a2e;
+$nav-bg-end: #161616;
+$nav-text-color: #ffffff;
+$nav-hover-bg: rgba(255, 255, 255, 0.1);
+$nav-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+$nav-transition: all 0.3s ease;
+$nav-border-radius: 0.25rem;
+$nav-padding: 0.8rem 0;
+$nav-link-padding: 0.5rem 1rem;
+
+// Estilos generales
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.main-nav {
+  padding: $nav-padding;
+  background: linear-gradient(135deg, $nav-bg-start 0%, $nav-bg-end 100%) !important;
+  box-shadow: $nav-shadow;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Brand/logo styles
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $nav-text-color;
+  font-weight: bold;
+}
+
+.nav-logo {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.nav-brand-text {
+  font-size: 1.25rem;
+}
+
+// Navigation menu
+.nav-collapse {
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  display: block;
+  padding: $nav-link-padding;
+  color: $nav-text-color !important;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: $nav-border-radius;
+  transition: $nav-transition;
+  
+  &:hover,
+  &.nav-link-active {
+    background-color: $nav-hover-bg;
+  }
+}
+
+.nav-icon {
+  margin-right: 0.25rem;
+}
+
+// Responsive adjustments
+@media (max-width: 992px) {
+  .nav-collapse {
+    justify-content: center;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-item {
+    text-align: center;
+  }
+  
+  .nav-brand {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

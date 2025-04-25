@@ -7,7 +7,7 @@
 
 
         <!-- Main-->
-        <main >
+        <main class="flex-grow-1" >
             <slot />
         </main>
 
