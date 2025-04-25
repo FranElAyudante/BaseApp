@@ -143,4 +143,4 @@ npm install --save font-awesome
 ```
 
 
-<div align="center"> <p> usando el stack más moderno de PHP/JavaScript</p> <img src="https://laravel.com/img/logomark.min.svg" width="50" alt="Laravel"> <img src="https://vuejs.org/images/logo.png" width="50" alt="Vue"></div> ```
+<div align="center"> <p> usando el stack más moderno de PHP/JavaScript</p> <img src="https://laravel.com/img/logomark.min.svg" width="50" alt="Laravel"> <img src="https://vuejs.org/images/logo.png" width="50" alt="Vue"></div>
