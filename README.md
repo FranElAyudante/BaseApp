@@ -15,6 +15,10 @@ Plantilla base para proyectos modernos con autenticación lista y arquitectura o
 - **Arquitectura Limpia**: Separación clara entre frontend y backend
 - **Ready-to-Deploy**: Configuración optimizada para producción
 
+Cada Vista tiene su propio SCSS
+
+*** Importante, importar el archivo scss a app.scss ***
+
 ## 🛠 Tecnologías Clave
 
 | Backend           | Frontend          | Herramientas       |
@@ -59,8 +63,7 @@ baseapp/
 ```bash 
 composer install
 npm install
-npm install bootstrap@5.3.3 @popperjs/core
-npm install bootstrap@5.3.3 sass
+php artisan storage:link
 ```
 
 2. Configurar entorno
@@ -112,6 +115,8 @@ php artisan migrate
 php artisan serve
 npm run dev
 ```
+
+
 
 
 <div align="center"> <p> usando el stack más moderno de PHP/JavaScript</p> <img src="https://laravel.com/img/logomark.min.svg" width="50" alt="Laravel"> <img src="https://vuejs.org/images/logo.png" width="50" alt="Vue"></div> ```

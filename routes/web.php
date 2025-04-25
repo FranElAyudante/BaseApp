@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -9,6 +10,7 @@ use Inertia\Inertia;
 // Rutas públicas
 Route::get('/blog', [BlogController::class, 'index'])->name('public.blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'showPublic'])->name('blog.showPublic');
+Route::get('/contacto', [ContactoController::class, 'index'])->name('public.contacto.index');
 
 
 
