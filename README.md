@@ -116,7 +116,31 @@ php artisan serve
 npm run dev
 ```
 
+## 🚀 Comandos para crear un proyecto de 0
 
+1. Crear proyecto Laravel con Breeze (Inertia + Vue)
+```bash 
+composer create-project laravel/laravel:^11.0 BaseApp
+— verificar si estas usando laravel 11 —-
+cd BaseApp
+php artisan --version
+```
+—-------
+```bash 
+composer require laravel/breeze --dev
+php artisan breeze:install vue
+npm install && npm run dev
+php artisan migrate
+```
+—---------------------------
+Comandos para instalar bibliotecas
+```bash 
+npm install sweetalert2
+npm install quill 
+npm install bootstrap-icons
+php artisan storage:link
+npm install --save font-awesome
+```
 
 
 <div align="center"> <p> usando el stack más moderno de PHP/JavaScript</p> <img src="https://laravel.com/img/logomark.min.svg" width="50" alt="Laravel"> <img src="https://vuejs.org/images/logo.png" width="50" alt="Vue"></div> ```
